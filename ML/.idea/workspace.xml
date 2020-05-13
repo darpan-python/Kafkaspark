@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="48d99280-7b44-4194-bfa3-35ca01f075fb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1TQjDfqOZ6Y5RkGDBavFBZcEeoo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SparkProjects" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sparkMultiSource" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.mainLogic">
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ML" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MLPackage" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MLPackage/Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ML" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MLPackage" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MLPackage/gui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mainLogic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ML" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sparkMultiSource" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sparkMultiSource/mainLogic.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="nlp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ML" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MLPackage" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MLPackage/nlp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.mainLogic" />
+        <item itemvalue="Python.gui" />
+        <item itemvalue="Python.nlp" />
+        <item itemvalue="Python.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="48d99280-7b44-4194-bfa3-35ca01f075fb" name="Default Changelist" comment="" />
+      <created>1573399095120</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573399095120</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="396" y="124" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580464311820">
+      <screen x="67" y="27" width="1293" height="741" />
+    </state>
+    <state x="396" y="124" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/67.27.1293.741@67.27.1293.741" timestamp="1580464311820" />
+    <state x="462" y="305" width="492" height="182" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog" timestamp="1580470857015">
+      <screen x="67" y="27" width="1293" height="741" />
+    </state>
+    <state x="462" y="305" width="492" height="182" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog/67.27.1293.741@67.27.1293.741" timestamp="1580470857015" />
+    <state x="471" y="100" key="#xdebugger.evaluate" timestamp="1580470991120">
+      <screen x="67" y="27" width="1293" height="741" />
+    </state>
+    <state x="471" y="100" key="#xdebugger.evaluate/67.27.1293.741@67.27.1293.741" timestamp="1580470991120" />
+    <state x="512" y="221" width="424" height="484" key="FileChooserDialogImpl" timestamp="1586064345883">
+      <screen x="67" y="27" width="1293" height="741" />
+    </state>
+    <state x="512" y="221" width="424" height="484" key="FileChooserDialogImpl/67.27.1293.741@67.27.1293.741" timestamp="1586064345883" />
+    <state width="1270" height="290" key="GridCell.Tab.0.bottom" timestamp="1581709128795">
+      <screen x="67" y="27" width="1293" height="741" />
+    </state>
+    <state width="1270" height="290" key="GridCell.Tab.0.bottom/67.27.1293.741@67.27.1293.741" timestamp="1581709128795" />
+    <state width="1270" height="290" key="GridCell.Tab.0.center" timestamp="1581709128794">
+      <screen x="67" y="27" width="1293" height="741" />
+    </state>
+    <state width="1270" height="290" key="GridCell.Tab.0.center/67.27.1293.741@67.27.1293.741" timestamp="1581709128794" />
+    <state width="1270" height="290" key="GridCell.Tab.0.left" timestamp="1581709128793">
+      <screen x="67" y="27" width="1293" height="741" />
+    </state>
+    <state width="1270" height="290" key="GridCell.Tab.0.left/67.27.1293.741@67.27.1293.741" timestamp="1581709128793" />
+    <state width="1270" height="290" key="GridCell.Tab.0.right" timestamp="1581709128794">
+      <screen x="67" y="27" width="1293" height="741" />
+    </state>
+    <state width="1270" height="290" key="GridCell.Tab.0.right/67.27.1293.741@67.27.1293.741" timestamp="1581709128794" />
+    <state width="1270" height="219" key="GridCell.Tab.1.bottom" timestamp="1580471714938">
+      <screen x="67" y="27" width="1293" height="741" />
+    </state>
+    <state width="1270" height="219" key="GridCell.Tab.1.bottom/67.27.1293.741@67.27.1293.741" timestamp="1580471714938" />
+    <state width="1270" height="219" key="GridCell.Tab.1.center" timestamp="1580471714936">
+      <screen x="67" y="27" width="1293" height="741" />
+    </state>
+    <state width="1270" height="219" key="GridCell.Tab.1.center/67.27.1293.741@67.27.1293.741" timestamp="1580471714936" />
+    <state width="1270" height="219" key="GridCell.Tab.1.left" timestamp="1580471714935">
+      <screen x="67" y="27" width="1293" height="741" />
+    </state>
+    <state width="1270" height="219" key="GridCell.Tab.1.left/67.27.1293.741@67.27.1293.741" timestamp="1580471714935" />
+    <state width="1270" height="219" key="GridCell.Tab.1.right" timestamp="1580471714937">
+      <screen x="67" y="27" width="1293" height="741" />
+    </state>
+    <state width="1270" height="219" key="GridCell.Tab.1.right/67.27.1293.741@67.27.1293.741" timestamp="1580471714937" />
+    <state x="369" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1586063904931">
+      <screen x="67" y="27" width="1293" height="741" />
+    </state>
+    <state x="369" y="224" key="com.intellij.ide.util.TipDialog/67.27.1293.741@67.27.1293.741" timestamp="1586063904931" />
+  </component>
+</project>

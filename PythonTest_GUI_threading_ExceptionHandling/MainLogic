@@ -1,0 +1,64 @@
+# Wrapper class
+import os
+import shutil
+import glob
+
+class FTMService:
+
+    # parameters
+    inputFolderPath = "/root/PycharmProjects/PythonTest_GUI_threading_ExceptionHandling/Input"
+    archiveFolder = "/root/PycharmProjects/PythonTest_GUI_threading_ExceptionHandling/Archive"
+    failedFolder = "/root/PycharmProjects/PythonTest_GUI_threading_ExceptionHandling/Failed"
+    inputFileName = ""
+
+    # Default constructor
+    def __init__(self):
+        self.inputFolder = FTMService.inputFolderPath
+        self.archive = FTMService.archiveFolder
+        self.failed = FTMService.failedFolder
+        pass
+
+    # Main Logic Function
+    def fileMovementLogic(self):
+
+        # check folder if any File Exist
+        print("Folder Processing Started")
+        self.FolderCheck()
+        print("Folder Processing Completed")
+        pass
+
+    def FolderCheck(self):
+        try:
+
+            if os.path.isdir(self.inputFolder):
+                mylist = [f for f in glob.glob(self.inputFolder+"/"+"I_*01.xml")]
+                if (len(mylist)>0):
+                    for i in mylist:
+                        self.inputFileName = i
+                        shutil.move(str(self.inputFileName), self.archiveFolder)
+                othefile = [f for f in glob.glob(self.inputFolder + "/" + "*")]
+
+                if (len(othefile)>0):
+
+                    for i in othefile:
+
+                        self.inputFileName = i
+
+                        shutil.move(str(self.inputFileName), self.failed)
+                        pass
+                    pass
+                pass
+            pass
+        except FileExistsError:
+            print("File not found")
+            pass
+        except NotADirectoryError:
+            print("No Directory Found.")
+
+pass
+
+test = FTMService()
+test.fileMovementLogic()
+
+
+
