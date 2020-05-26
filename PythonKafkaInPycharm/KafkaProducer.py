@@ -10,9 +10,9 @@ from kafka.errors import KafkaError
 
 avro_schemaPath = "/root/PycharmProjects/KafkaPycharm/Kafka/user.avsc"
 folderPath = '/root/PycharmProjects/KafkaPycharm/Kafka/Json_folder_file_dir/'
-fileName = 'example_1.json'
+fileName = 'example_3.json'
 bootstrap_servers_url = 'localhost:9092'
-Topic_Name = "nb12"
+Topic_Name = "avropayments"
 
 
 class ProducerClass:
