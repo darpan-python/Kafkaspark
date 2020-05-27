@@ -1,6 +1,7 @@
 import socket
 import selectors
 from time import sleep
+
 def socketIntializer(host, post):
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -9,8 +10,9 @@ def socketIntializer(host, post):
         print("connection is still open " + str(msg))
         s.close()
 
-def preparingsocket(s):
+def preparingsocket(s, timesleep = 1):
     try:
+        sleep(timesleep)
         s.bind(('', port))
         print("socket binded")
         # put the socket into listening mode
@@ -52,10 +54,10 @@ def readingfromsocket(s: socket):
     finally:
         s.close()
 
-def readingdataFromCSV():
+def readingdataFromCSV(timesleep = 1):
     import csv
 
-    s = preparingsocket(socketIntializer(host, port))[0]
+    s = preparingsocket(socketIntializer(host, port), timesleep)[0]
     with open(r"/home/darpan/spark-2.4.0-bin-hadoop2.7/python/sales_info.csv", 'r') as CSVFile:
         csvreader = csv.reader(CSVFile)
         linecount = 0
@@ -71,15 +73,48 @@ def readingdataFromCSV():
                 linecount = linecount + 1
                 pass
 
+def sparkrundf():
+
+    import os
+    # Path for spark source folder
+    os.environ['SPARK_HOME'] = "/home/darpan/spark-2.4.0-bin-hadoop2.7"
+    os.environ[
+        'PYSPARK_SUBMIT_ARGS'] = '--master local --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.4.0 pyspark-shell'
+    os.environ['PYSPARK_PYTHON'] = 'python3.6'
+    from pyspark.sql import SparkSession
+
+    spark = SparkSession.builder.appName("Socket Streaming").getOrCreate()
+
+    df = spark.readStream\
+        .format("socket")\
+        .option("host", "localhost")\
+        .option("port", 12345)\
+        .load()
+
+    df.writeStream\
+        .format("console")\
+        .outputMode("append")\
+        .trigger(processingTime = "10 seconds")\
+        .start()\
+        .awaitTermination()
 
 
 if __name__ == "__main__":
+    import threading
+
     sel = selectors.DefaultSelector()
     host = 'localhost'
     port = 12345
+    timesleep = 5
+
+    # Used Threading concept to run socket and spark both.
+
+    threading.Thread(target = readingdataFromCSV, args = (timesleep,)).start()
+    sparkrundf()
 
     #sendingdataToSocket(preparingsocket(socketIntializer(host, port))[0])
+
     #readingfromsocket(socketIntializer(host, port))
 
-    readingdataFromCSV()
+    #readingdataFromCSV()
 
